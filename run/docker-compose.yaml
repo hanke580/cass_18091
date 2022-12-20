@@ -3,16 +3,16 @@ services:
 
     DC3N0:
         container_name: cassandra-test_N0
-        image: upfuzz_cassandra:test
+        image: hanke580/cassandra-18091
         command: bash -c 'sleep 0 && /usr/bin/supervisord'
         networks:
             network_cassandra_apache-cassandra-4.0.7_to_apache-cassandra-4.1.0_8ea795f9-71b9-43fb-b578-7d6e69677f92:
                 ipv4_address: 192.168.47.2
 
         volumes:
-            - ./persistent/node_0/log:/var/log/cassandra
+            # - ./persistent/node_0/log:/var/log/cassandra
             - ./persistent/node_0/env.sh:/usr/bin/set_env
-            - ./persistent/node_0/consolelog:/var/log/supervisor
+            # - ./persistent/node_0/consolelog:/var/log/supervisor
         environment:
             - CASSANDRA_CLUSTER_NAME=dev_cluster
             - CASSANDRA_SEEDS=192.168.47.2,
@@ -33,15 +33,15 @@ services:
             nofile: 100000
     DC3N1:
         container_name: cassandra-test_N1
-        image: upfuzz_cassandra:test
+        image: hanke580/cassandra-18091
         command: bash -c 'sleep 0 && /usr/bin/supervisord'
         networks:
             network_cassandra_apache-cassandra-4.0.7_to_apache-cassandra-4.1.0_8ea795f9-71b9-43fb-b578-7d6e69677f92:
                 ipv4_address: 192.168.47.3
         volumes:
-            - ./persistent/node_1/log:/var/log/cassandra
+            # - ./persistent/node_1/log:/var/log/cassandra
             - ./persistent/node_1/env.sh:/usr/bin/set_env
-            - ./persistent/node_1/consolelog:/var/log/supervisor
+            # - ./persistent/node_1/consolelog:/var/log/supervisor
         environment:
             - CASSANDRA_CLUSTER_NAME=dev_cluster
             - CASSANDRA_SEEDS=192.168.47.2,
@@ -62,15 +62,15 @@ services:
             nofile: 100000
     DC3N2:
         container_name: cassandra-test_N2
-        image: upfuzz_cassandra:test
+        image: hanke580/cassandra-18091
         command: bash -c 'sleep 0 && /usr/bin/supervisord'
         networks:
             network_cassandra_apache-cassandra-4.0.7_to_apache-cassandra-4.1.0_8ea795f9-71b9-43fb-b578-7d6e69677f92:
                 ipv4_address: 192.168.47.4
         volumes:
-            - ./persistent/node_2/log:/var/log/cassandra
+            # - ./persistent/node_2/log:/var/log/cassandra
             - ./persistent/node_2/env.sh:/usr/bin/set_env
-            - ./persistent/node_2/consolelog:/var/log/supervisor
+            # - ./persistent/node_2/consolelog:/var/log/supervisor
         environment:
             - CASSANDRA_CLUSTER_NAME=dev_cluster
             - CASSANDRA_SEEDS=192.168.47.2,
