@@ -1,0 +1,25 @@
+2022-12-19 05:41:08,298 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-12-19 05:41:08,298 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2022-12-19 05:41:08,301 INFO RPC interface 'supervisor' initialized
+2022-12-19 05:41:08,301 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-12-19 05:41:08,301 INFO supervisord started with pid 1
+2022-12-19 05:41:09,306 INFO spawned: 'sshd' with pid 8
+2022-12-19 05:41:09,311 INFO spawned: 'cassandra' with pid 9
+2022-12-19 05:41:09,363 INFO exited: cassandra (exit status 1; not expected)
+2022-12-19 05:41:10,365 INFO success: sshd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-19 05:41:10,368 INFO spawned: 'cassandra' with pid 19
+2022-12-19 05:41:10,404 INFO exited: cassandra (exit status 1; not expected)
+2022-12-19 05:41:12,410 INFO spawned: 'cassandra' with pid 26
+2022-12-19 05:41:12,445 INFO exited: cassandra (exit status 1; not expected)
+2022-12-19 05:41:15,453 INFO spawned: 'cassandra' with pid 33
+2022-12-19 05:41:15,487 INFO exited: cassandra (exit status 1; not expected)
+2022-12-19 05:41:16,488 INFO gave up: cassandra entered FATAL state, too many start retries too quickly
+2022-12-19 05:43:53,466 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-12-19 05:43:53,466 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2022-12-19 05:43:53,470 INFO RPC interface 'supervisor' initialized
+2022-12-19 05:43:53,470 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-12-19 05:43:53,470 INFO supervisord started with pid 1
+2022-12-19 05:43:54,474 INFO spawned: 'sshd' with pid 8
+2022-12-19 05:43:54,479 INFO spawned: 'cassandra' with pid 9
+2022-12-19 05:43:56,200 INFO success: sshd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-19 05:43:56,200 INFO success: cassandra entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
