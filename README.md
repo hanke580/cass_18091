@@ -2,7 +2,7 @@
 
 
 ## Prerequisite
-Install docker, docker-compose
+Install docker, docker compose
 
 
 ## Run the script

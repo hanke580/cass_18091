@@ -5,7 +5,7 @@ rm res.log
 # 1. Pull Image
 docker pull hanke580/cassandra-18091:latest
 
-# 2. Start up cluster (docker-compose)
+# 2. Start up cluster (docker compose)
 test () {
         echo "hh"
 
@@ -16,7 +16,7 @@ test () {
                 echo "export PYTHON=python3" >> ./persistent/node_${i}/env.sh
         done
 
-        docker-compose up &
+        docker compose up &
 
         CQLSH="/cassandra/apache-cassandra-4.0.7/bin/cqlsh"
 
