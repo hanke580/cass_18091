@@ -7,7 +7,7 @@ Install docker, docker compose
 
 ## Run the script
 ```bash
-cd run.sh
+cd run
 ./run.sh
 ```
 
